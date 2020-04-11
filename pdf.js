@@ -6,7 +6,7 @@ https://(api|license|createpdf).(revenuecat|pdfexpert|acrobat).com/(v1|api/1.0/p
 hostname：license.pdfexpert.com, api.revenuecat.com,createpdf.acrobat.com
 
 Surge 4.0:
-http-response ^https://(api|license|createpdf).(revenuecat|pdfexpert|acrobat).com/(v1|api/1.0/pdfexpert6|createpdf/api/users/me)/subscri(bers/|(ption(s|/refresh))) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/surge/master/Script/pdf.js
+http-response ^https://(api|license|createpdf).(revenuecat|pdfexpert|acrobat).com/(v1|api/1.0/pdfexpert6|createpdf/api/users/me)/subscri(bers/|(ption(s|/refresh))) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/pdf.js
 
 */
 
