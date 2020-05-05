@@ -4,9 +4,6 @@
 
 [Script]
 
-#京东价格
-jd_price.js = type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=0
-
 # FaceApp unlock 
 FaceApp.js = type=http-response,pattern=^https?:\/\/api\.faceapp\.io(.*)\/api\/v.*\/auth\/user\/credentials,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/FaceApp.js,script-update-interval=0
 
@@ -21,5 +18,5 @@ instapaper.js = type=http-response,pattern=^https://www.instapaper.com/api/subsc
 
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, api.faceapp.io, license.pdfexpert.com, api.revenuecat.com,createpdf.acrobat.com, www.instapaper.com
+hostname = %APPEND% api.faceapp.io, license.pdfexpert.com, api.revenuecat.com,createpdf.acrobat.com, www.instapaper.com
 
