@@ -1,13 +1,10 @@
 # 整理网络收集的网易云音乐解锁项目
 
 proxies:
-  - name: 🎵网易云音乐http1
+  - name: 🎵网易云音乐http
     type: http
     server: taron.top
     port: 100
-  - name: 🎵网易云音乐http2
-    type: http
-    server: 106.52.127.72
-    port: 19951
+
 
    
