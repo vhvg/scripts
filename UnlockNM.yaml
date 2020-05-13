@@ -5,6 +5,9 @@ proxies:
     type: http
     server: taron.top
     port: 100
-
+  - name: 🎵网易云音乐http2
+    type: http
+    server: 106.52.127.72
+    port: 19951
 
    
