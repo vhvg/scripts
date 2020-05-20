@@ -4,7 +4,7 @@
 
 
 [Rule]
-
+URL-REGEX,^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner),REJECT
 
 [Script]
 
