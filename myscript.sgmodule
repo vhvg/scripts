@@ -2,6 +2,10 @@
 #!desc=该模块为脚本合集,用于补充nzw9314已整理的模块. 需要配置 CA 证书并启用 MitM 开关
 #!system=ios
 
+
+[Rule]
+# URL-REGEX,^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner),REJECT
+
 [Script]
 
 # FaceApp unlock 
@@ -16,7 +20,9 @@ documents.js = type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/ap
 # instapaper解锁Pro
 instapaper.js = type=http-response,pattern=^https://www.instapaper.com/api/subscription_status,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/instapaper.js,script-update-interval=0
 
+# 什么值得买去广告
+SMZDM.js = type=http-response,pattern=^https?:\/\/(s|h(aojia|omepage)|(articl|baik)e)-api\.smzdm\.com\/(home|sou),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/SMZDM.js
 
 [MITM]
-hostname = %APPEND% api.faceapp.io, license.pdfexpert.com, api.revenuecat.com,createpdf.acrobat.com, www.instapaper.com
+hostname = %APPEND% api.faceapp.io, license.pdfexpert.com, api.revenuecat.com,createpdf.acrobat.com, www.instapaper.com, *api.smzdm.com
 
