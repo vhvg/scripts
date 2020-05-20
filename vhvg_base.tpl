@@ -149,6 +149,8 @@ Auto = url-test,1,2,3,4,url = http://bing.com/
 
 [Rule]
 
+DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block.txt,🚫AdBlock
+
 // Detect local network
 GEOIP, CN, 🍂 Domestic
 // Use Proxy for all others
