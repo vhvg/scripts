@@ -55,7 +55,6 @@ host = 127.0.0.1
 [Remote Proxy]
 # 订阅节点
 # 别名 = 订阅URL
-Cordcloud = https://gfwsb.114514.best/sub?target=loon&url=https%3A%2F%2Fwww.cordcloud.pro%2Flink%2FxkkKvEFZOPijKU3M%3Fmu%3D4
 
 
 [Remote Filter]
