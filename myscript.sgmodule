@@ -8,7 +8,7 @@ URL-REGEX,^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner),REJ
 
 [Script]
 
-# 获取Oclean签到cookie 
+# 获取Oclean签到cookie: 微信小程序 - 欧可林商城 - 签到 获取链接
 Oclean.cookie.js = script-path=https://raw.githubusercontent.com/vhvg/scripts/master/Oclean.cookie.js,type=http-request,pattern=^https:\/\/mall\.oclean\.com\/API\/VshopProcess\.ashx\?action=SignIn.?
 
 # FaceApp unlock 
