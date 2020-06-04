@@ -1,3 +1,18 @@
+/*
+Oclean每日积分签到 By @vhvg
+
+微信小程序 - 欧可林商城 - 签到 获取链接
+
+Surge 4.0+:
+[Script]
+Oclean.cookie.js = script-path=myscript/Oclean.cookie.js,type=http-request,pattern=^https:\/\/mall\.oclean\.com\/API\/VshopProcess\.ashx\?action=SignIn.?
+Oclean每日签到 = type=cron,cronexp=15 0 0 * * *,script-path=myscript/Oclean.js,wake-system=true
+
+[mitm]
+hostname = mall.oclean.com
+
+*/
+
 
 const cookieName = 'Oclean'
 
