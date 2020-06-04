@@ -34,7 +34,7 @@ function sign() {
   let url = { url: VAL_signurl, body: '{}', headers: JSON.parse(VAL_signheader) }
   
   //构造自动签到特征
-  url.headers['X-mark'] = 'auto'
+  url.headers['xingzhi'] = 'auto'
   
   chavy.get(url, (error, response, data) => {
     let result = JSON.parse(data)
