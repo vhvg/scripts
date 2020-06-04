@@ -24,7 +24,7 @@ const chavy = init()
 let title = ``
 let detail = ``
 
-if ($request && $request.headers.X-mark != 'auto' && $request.headers.Host == 'mall.oclean.com') {
+if ($request && $request.headers.xingzhi != 'auto' && $request.headers.Host == 'mall.oclean.com') {
   const signurlVal = $request.url
   const signheaderVal = JSON.stringify($request.headers)
   if (signurlVal) chavy.setdata(signurlVal, signurlKey)
