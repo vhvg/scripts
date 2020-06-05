@@ -42,7 +42,7 @@ function sign() {
     // 签到成功
     if (result.Code == 1) {
       let subTitle = `签到结果: 成功`
-      let detail = `获得积分: ${result.Data.points}, 总积分: ${result.Data.integral}`
+      let detail = `获得积分: ${result.Data.points}, 总积分: ${result.Data.integral}, 签满${result.Data.continuDays}/${result.Data.settingDays}天可获得${result.Data.continuPoints}积分`
       chavy.msg(title, subTitle, detail)
     }
 	// 签到重复
