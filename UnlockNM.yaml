@@ -9,5 +9,11 @@ proxies:
     type: http
     server: 106.52.127.72
     port: 19951
-
-   
+  - name: 🎵网易云音乐http3
+    type: http
+    server: aimer.one
+    port: 2333
+  - name: 🎵网易云音乐http4
+    type: http
+    server: music.griouges.cn
+    port: 39000   
