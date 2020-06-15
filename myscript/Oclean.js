@@ -39,16 +39,16 @@ function sign() {
   chavy.get(url, (error, response, data) => {
     let result = JSON.parse(data)
     let title = `Olcean每日签到`
-    // 签到成功
-    if (result.Code == 1) {
+    // 签到成功，未满7天
+    if (result.Code == 1 && result.Data.continuDays != 0) {
       let subTitle = `签到结果: 成功`
       let detail = `获得积分: ${result.Data.points}, 总积分: ${result.Data.integral}, 签满${result.Data.continuDays}/${result.Data.settingDays}天可获得${result.Data.continuPoints}积分`
       chavy.msg(title, subTitle, detail)
     }
-    // 签到满7天
-    else if(result.Data.continuDays == 0){
+    // 签到成功，满7天
+    else if(result.Code == 1 && result.Data.continuDays == 0){
       let subTitle = `签到结果: 成功`
-      let detail = `获得积分: ${result.Data.points}, 签满${result.Data.settingDays}天获得奖励积分${result.Data.continuPoints}， 总积分: ${result.Data.integral}`
+      let detail = `获得积分: ${result.Data.points}, 已签满${result.Data.settingDays}天获得奖励积分${result.Data.continuPoints}, 总积分: ${result.Data.integral}`
       chavy.msg(title, subTitle, detail)
     }
     // 签到重复
