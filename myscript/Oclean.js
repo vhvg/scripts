@@ -45,7 +45,13 @@ function sign() {
       let detail = `获得积分: ${result.Data.points}, 总积分: ${result.Data.integral}, 签满${result.Data.continuDays}/${result.Data.settingDays}天可获得${result.Data.continuPoints}积分`
       chavy.msg(title, subTitle, detail)
     }
-	// 签到重复
+    // 签到满7天
+    else if(result.Data.continuDays == 0){
+      let subTitle = `签到结果: 成功`
+      let detail = `获得积分: ${result.Data.points}, 签满${result.Data.settingDays}天获得奖励积分${result.Data.continuPoints}， 总积分: ${result.Data.integral}`
+      chavy.msg(title, subTitle, detail)
+    }
+    // 签到重复
     else if(result.Code == 2){
       let subTitle = `签到结果: 成功（重复签到）`
       let detail = `总积分: ${result.Data.integral}`
