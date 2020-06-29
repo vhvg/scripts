@@ -227,10 +227,9 @@ amplifi.lan = server:system
 # Redirect Google Search Service
 ^http:\/\/www\.google\.cn https://www.google.com 302
 
-// Wiki
-^https?:\/\/.+.(m\.)?wikipedia\.org/wiki http://www.wikiwand.com/en 302
-^https?:\/\/zh.(m\.)?wikipedia\.org/(zh-hans|zh-sg|zh-cn|zh(?=/)) http://www.wikiwand.com/zh 302
-^https?:\/\/zh.(m\.)?wikipedia\.org/zh-[a-zA-Z]{2,} http://www.wikiwand.com/zh-hant 302
+# Wiki
+^https://zh.(m.)?wikipedia.org/zh(-\w*)?(?=/) https://www.wikiwand.com/zh$2 302
+^https://(\w*).(m.)?wikipedia.org/wiki https://www.wikiwand.com/$1 302
 
 
 [Header Rewrite]
