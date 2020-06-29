@@ -183,10 +183,54 @@ GEOIP, CN, 🍂 Domestic
 // Use Proxy for all others
 FINAL, ☁️ Others, dns-failed
 
+[Host]
+ip6-localhost = ::1
+ip6-loopback = ::1
+taobao.com = server:223.6.6.6
+*.taobao.com = server:223.6.6.6
+tmall.com = server:223.6.6.6
+*.tmall.com = server:223.6.6.6
+jd.com = server:119.29.29.29
+*.jd.com = server:119.28.28.28
+*.qq.com = server:119.28.28.28
+*.tencent.com = server:119.28.28.28
+*.alicdn.com = server:223.5.5.5
+aliyun.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+weixin.com = server:119.28.28.28
+*.weixin.com = server:119.28.28.28
+bilibili.com = server:119.29.29.29
+*.bilibili.com = server:119.29.29.29
+hdslb.com = server:119.29.29.29
+163.com = server:119.29.29.29
+*.163.com = server:119.29.29.29
+126.com = server:119.29.29.29
+*.126.com = server:119.29.29.29
+*.126.net = server:119.29.29.29
+*.127.net = server:119.29.29.29
+*.netease.com = server:119.29.29.29
+mi.com = server:119.29.29.29
+*.mi.com = server:119.29.29.29
+xiaomi.com = server:119.29.29.29
+*.xiaomi.com = server:119.29.29.29
+dler.cloud = server:180.76.76.76
+dleris.best = server:180.76.76.76
+routerlogin.net = server:system
+_hotspot_.m2m = server:system
+router.asus.com = server:system
+hotspot.cslwifi.com = server:system
+amplifi.lan = server:system
+*.lan = server:system
+
 
 [URL Rewrite]
 # Redirect Google Search Service
 ^http:\/\/www\.google\.cn https://www.google.com 302
+
+// Wiki
+^https?:\/\/.+.(m\.)?wikipedia\.org/wiki http://www.wikiwand.com/en 302
+^https?:\/\/zh.(m\.)?wikipedia\.org/(zh-hans|zh-sg|zh-cn|zh(?=/)) http://www.wikiwand.com/zh 302
+^https?:\/\/zh.(m\.)?wikipedia\.org/zh-[a-zA-Z]{2,} http://www.wikiwand.com/zh-hant 302
 
 
 [Header Rewrite]
