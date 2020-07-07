@@ -9,8 +9,8 @@ URL-REGEX,^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner),REJ
 [Script]
 
 # 签到获取cookie
-获取无忧行Cookie1 = type=http-response,pattern=https?:\/\/app.*\.jegotrip\.com\.cn\/.*getUser\?,script-path=https://ooxx.be/js/jegotrip.js
-获取无忧行Cookie2 = type=http-response,pattern=https?:\/\/task\.jegotrip\.com\.cn\:8080\/app\/tasks\?userid,script-path=https://ooxx.be/js/jegotrip.js, requires-body=true
+# 获取无忧行Cookie1 = type=http-response,pattern=https?:\/\/app.*\.jegotrip\.com\.cn\/.*getUser\?,script-path=https://ooxx.be/js/jegotrip.js
+# 获取无忧行Cookie2 = type=http-response,pattern=https?:\/\/task\.jegotrip\.com\.cn\:8080\/app\/tasks\?userid,script-path=https://ooxx.be/js/jegotrip.js, requires-body=true
 
 
 # 解锁
