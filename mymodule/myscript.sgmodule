@@ -9,6 +9,8 @@ URL-REGEX,^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner),REJ
 [Script]
 
 # 签到获取cookie
+无忧行cookie1 = type=http-response,pattern=https?:\/\/app.*\.jegotrip\.com\.cn\/.*getUser\?,script-path=https://ooxx.be/js/jegotrip.js
+无忧行cookie2 = type=http-response,pattern=https?:\/\/task\.jegotrip\.com\.cn\:8080\/app\/tasks\?userid,script-path=https://ooxx.be/js/jegotrip.js, requires-body=true
 
 
 # 解锁
@@ -35,5 +37,5 @@ SMZDM.js = type=http-response,pattern=^https?:\/\/(s|h(aojia|omepage)|(articl|ba
 
 
 [MITM]
-hostname = %APPEND% mall.oclean.com, www.instapaper.com, license.pdfexpert.com, api.revenuecat.com, createpdf.acrobat.com, api.faceapp.io, *api.smzdm.com, app.bilibili.com, api.bilibili.com
+hostname = %APPEND% app*.jegotrip.com.cn, task.jegotrip.com.cn, www.instapaper.com, license.pdfexpert.com, api.revenuecat.com, createpdf.acrobat.com, api.faceapp.io, *api.smzdm.com, app.bilibili.com, api.bilibili.com
 
