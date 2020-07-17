@@ -28,12 +28,8 @@ documents.js = type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/ap
 # 什么值得买去广告
 SMZDM.js = type=http-response,pattern=^https?:\/\/(s|h(aojia|omepage)|(articl|baik)e)-api\.smzdm\.com\/(home|sou)(?!\/list_filter),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/SMZDM.js
 
-# Bilibili开启1080P+
-开启1080P+ = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/Surge/master/Script/BiliHD.js
-
-
 
 
 [MITM]
-hostname = %APPEND% app*.jegotrip.com.cn, task.jegotrip.com.cn, www.instapaper.com, license.pdfexpert.com, api.revenuecat.com, createpdf.acrobat.com, api.faceapp.io, *api.smzdm.com, app.bilibili.com, api.bilibili.com
+hostname = %APPEND% app*.jegotrip.com.cn, task.jegotrip.com.cn, www.instapaper.com, license.pdfexpert.com, api.revenuecat.com, createpdf.acrobat.com, api.faceapp.io, *api.smzdm.com
 
