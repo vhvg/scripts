@@ -1,0 +1,17 @@
+#!name=我的补充cookie脚本
+#!desc=该模块适用于我的签到脚本Cookie获取，使用后手动将其禁用，以免产生不必要的MITM
+#!system=ios
+
+
+[Script]
+
+获取无忧行Cookie1 = type=http-response,pattern=https?:\/\/app.*\.jegotrip\.com\.cn\/.*getUser\?,script-path=https://ooxx.be/js/jegotrip.js, requires-body=true
+获取无忧行Cookie2 = type=http-response,pattern=https?:\/\/task\.jegotrip\.com\.cn\:8080\/app\/tasks\?userid,script-path=https://ooxx.be/js/jegotrip.js, requires-body=true
+
+
+
+[MITM]
+hostname = %APPEND% app*.jegotrip.com.cn, task.jegotrip.com.cn
+
+
+
