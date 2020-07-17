@@ -31,5 +31,5 @@ SMZDM.js = type=http-response,pattern=^https?:\/\/(s|h(aojia|omepage)|(articl|ba
 
 
 [MITM]
-hostname = %APPEND% app*.jegotrip.com.cn, task.jegotrip.com.cn, www.instapaper.com, license.pdfexpert.com, api.revenuecat.com, createpdf.acrobat.com, api.faceapp.io, *api.smzdm.com
+hostname = %APPEND% www.instapaper.com, license.pdfexpert.com, api.revenuecat.com, createpdf.acrobat.com, api.faceapp.io, *api.smzdm.com
 
