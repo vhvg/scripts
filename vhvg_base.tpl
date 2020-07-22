@@ -42,18 +42,17 @@ cfw-latency-timeout: 3000 # seconds
 
 {% endif %}
 
+
+
 {% if local.clash.new_field_name == "true" %}
 proxies: ~
 proxy-groups: ~
 rules: ~
-{% endif %}
-{% if local.clash.new_field_name == "false" %}
+{% else %}
 Proxy: ~
 Proxy Group: ~
 Rule: ~
 {% endif %}
-
-
 
 {% if request.target == "surge" %}
 
