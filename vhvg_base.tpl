@@ -69,7 +69,7 @@ allow-wifi-access = true
 # > SOCKS5 代理服务端口（默认 "6153"）
 # wifi-access-socks5-port = 6153
 # 外部控制器
-external-controller-access = admin@127.0.0.1:6170
+external-controller-access = admin@0.0.0.0:6170
 # 兼容性
 # > 兼容模式（默认 "禁用"）
 # compatibility-mode = 0
