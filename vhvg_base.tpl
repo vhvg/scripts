@@ -49,6 +49,7 @@ Rule: ~
 {% endif %}
 {% if request.target == "surge" %}
 
+[General]
 # 日志等级 warning, notify, info, verbose (默认: notify)
 loglevel = notify
 # 网络诊断
