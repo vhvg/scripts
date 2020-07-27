@@ -204,9 +204,6 @@ ca-p12 = MIIJrgIBAzCCCXgGCSqGSIb3DQEHAaCCCWkEggllMIIJYTCCA/8GCSqGSIb3DQEHBqCCA/A
 # > Speed up download app ios
 dnspod = script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/dnspod.js,script-update-interval=0,type=dns
 
-# > Outbound Mode
-# 使用BoxJS配置                             
-Outbound Mode = type=event,event-name=network-changed,debug=1,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/RunningMode/running-mode.js
 
 {% endif %}
 {% if request.target == "loon" %}
