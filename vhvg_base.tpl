@@ -1,45 +1,15 @@
 {% if request.target == "clash" or request.target == "clashr" %}
 
-port: 7890
-socks-port: 7891
-redir-port: 7892
-allow-lan: true
+port: {{ default(global.clash.http_port, "7890") }}
+socks-port: {{ default(global.clash.socks_port, "7891") }}
+allow-lan: {{ default(global.clash.allow_lan, "true") }}
 mode: Rule
-log-level: info
-external-controller: '127.0.0.1:9090'
-experimental:
-  ignore-resolve-fail: true
-secret: ''
-
-# System proxy will ignore these domains(or ipnet)
-cfw-bypass:
-  - localhost
-  - 127.*
-  - 10.*
-  - 172.16.*
-  - 172.17.*
-  - 172.18.*
-  - 172.19.*
-  - 172.20.*
-  - 172.21.*
-  - 172.22.*
-  - 172.23.*
-  - 172.24.*
-  - 172.25.*
-  - 172.26.*
-  - 172.27.*
-  - 172.28.*
-  - 172.29.*
-  - 172.30.*
-  - 172.31.*
-  - 192.168.*
-  - <local>
-
-# Proxies module latency test settings
-cfw-latency-timeout: 3000 # seconds
-
-
-
+log-level: {{ default(global.clash.log_level, "info") }}
+external-controller: :9090
+{% if default(request.clash.dns, "") == "1" %}
+dns:
+  enabled: true
+  listen: 1053
 {% endif %}
 
 
