@@ -94,6 +94,8 @@ tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
 tun-included-routes = 192.168.1.12/32
 # DNS 服务器
 dns-server = 119.29.29.29,223.5.5.5,system
+# HTTP API
+http-api = examplekey@0.0.0.0:6166
 
 [Replica]
 # [抓取流量] => 过滤器
