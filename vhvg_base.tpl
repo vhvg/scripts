@@ -148,31 +148,44 @@ GEOIP,CN,𝐃𝐢𝐫𝐞𝐜𝐭
 FINAL,𝐅𝐢𝐧𝐚𝐥,dns-failed
 
 [Host]
-iosapps.itunes.apple.com = script:dnspod
+
+ip6-localhost = ::1
+ip6-loopback = ::1
+taobao.com = server:223.6.6.6
+*.taobao.com = server:223.6.6.6
+tmall.com = server:223.6.6.6
+*.tmall.com = server:223.6.6.6
+jd.com = server:119.29.29.29
+*.jd.com = server:119.28.28.28
+*.qq.com = server:119.28.28.28
+*.tencent.com = server:119.28.28.28
+*.alicdn.com = server:223.5.5.5
+aliyun.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+weixin.com = server:119.28.28.28
+*.weixin.com = server:119.28.28.28
+bilibili.com = server:119.29.29.29
+*.bilibili.com = server:119.29.29.29
+hdslb.com = server:119.29.29.29
+163.com = server:119.29.29.29
+*.163.com = server:119.29.29.29
+126.com = server:119.29.29.29
 *.126.com = server:119.29.29.29
 *.126.net = server:119.29.29.29
 *.127.net = server:119.29.29.29
-*.163.com = server:119.29.29.29
-*.alicdn.com = server:223.5.5.5
-*.aliyun.com = server:223.5.5.5
-*.baidu.com = server:syslib
-*.bdstatic.com = server:syslib
-*.bilibili.com = server:119.29.29.29
-*.jd.com = server:119.28.28.28
-*.mi.com = server:119.29.29.29
 *.netease.com = server:119.29.29.29
-*.pcbeta.com = 120.52.19.113
-*.qpic.cn = server:119.28.28.28
-*.qq.com = server:119.28.28.28
-*.taobao.com = server:223.6.6.6
-*.tencent.com = server:119.28.28.28
-*.tmall.com = server:223.6.6.6
-*.weixin.com = server:119.28.28.28
+mi.com = server:119.29.29.29
+*.mi.com = server:119.29.29.29
+xiaomi.com = server:119.29.29.29
 *.xiaomi.com = server:119.29.29.29
-cdn.pcbeta.attachment.inimc.com = 120.52.19.113
-cdn.pcbeta.css.inimc.com = 120.52.19.113
-cdn.pcbeta.static.inimc.com = 120.52.19.113
-hdslb.com = server:119.29.29.29
+routerlogin.net = server:system
+_hotspot_.m2m = server:system
+router.asus.com = server:system
+hotspot.cslwifi.com = server:system
+amplifi.lan = server:system
+*.lan = server:system
+
+
 # CUSTOM DNS
 
 [URL Rewrite]
@@ -203,8 +216,7 @@ ca-p12 = MIIJrgIBAzCCCXgGCSqGSIb3DQEHAaCCCWkEggllMIIJYTCCA/8GCSqGSIb3DQEHBqCCA/A
 
 
 [Script]
-# > Speed up download app ios
-dnspod = script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/dnspod.js,script-update-interval=0,type=dns
+
 
 
 {% endif %}
