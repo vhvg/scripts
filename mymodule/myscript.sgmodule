@@ -14,16 +14,16 @@ URL-REGEX,^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner),REJ
 # 解锁
 
 # instapaper解锁Pro
-instapaper.js = type=http-response,pattern=^https://www.instapaper.com/api/subscription_status,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/instapaper.js,script-update-interval=0
+instapaper.js = type=http-response,pattern=^https://www.instapaper.com/api/subscription_status,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/instapaper.js
 
 # 三款PDF APP解锁Pro: PDF Expret点睛和PDF Viewer及(Adbole Acrobat reader未测试）
-pdf.js = type=http-response,pattern=^https://(api|license|createpdf).(revenuecat|pdfexpert|acrobat).com/(v1|api/1.0/pdfexpert6|createpdf/api/users/me)/subscri(bers/|(ption(s|/refresh))),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/pdf.js,script-update-interval=0
+pdf.js = type=http-response,pattern=^https://(api|license|createpdf).(revenuecat|pdfexpert|acrobat).com/(v1|api/1.0/pdfexpert6|createpdf/api/users/me)/subscri(bers/|(ption(s|/refresh))),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/pdf.js
 
 # FaceApp unlock 
-FaceApp.js = type=http-response,pattern=^https?:\/\/api\.faceapp\.io(.*)\/api\/v.*\/auth\/user\/credentials,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/FaceApp.js,script-update-interval=0
+FaceApp.js = type=http-response,pattern=^https?:\/\/api\.faceapp\.io(.*)\/api\/v.*\/auth\/user\/credentials,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/FaceApp.js
 
 # Document
-documents.js = type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/documents.js,script-update-interval=0
+documents.js = type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/documents.js
 
 # 什么值得买去广告
 SMZDM.js = type=http-response,pattern=^https?:\/\/(s|h(aojia|omepage)|(articl|baik)e)-api\.smzdm\.com\/(home|sou)(?!\/list_filter),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/SMZDM.js
