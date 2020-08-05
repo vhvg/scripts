@@ -1,6 +1,9 @@
 /*
 [Script]
 http-response ^https?:\/\/api\.faceapp\.io(.*)\/api\/v.*\/auth\/user\/credentials requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/FaceApp.js
+
+FaceApp.js = type=http-response,pattern=^https?:\/\/api\.faceapp\.io(.*)\/api\/v.*\/auth\/user\/credentials,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/vhvg/scripts/master/myscript/FaceApp.js
+
 [MITM]
 hostname = api.faceapp.io
 */
