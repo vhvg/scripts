@@ -29,9 +29,10 @@ documents.js = type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/ap
 SMZDM.js = type=http-response,pattern=^https?:\/\/(s|h(aojia|omepage)|(articl|baik)e)-api\.smzdm\.com\/(home|sou)(?!\/list_filter),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/primovist/ScriptsForSurge/master/Scripts/SMZDM.js
 
 # 知乎注入CSS优化网页显示	
-知乎CSS.js = type=http-response,pattern=^https:\/\/www\.zhihu\.com\/question,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/zhihux.user.js
+知乎网页优化显示.js = type=http-response,pattern=^https:\/\/www\.zhihu\.com\/question,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/zhihux.user.js
 
-
+# 百度盘优化网页显示	
+百度盘网页优化显示.js = type=http-response,pattern=^https:\/\/pan\.baidu\.com,requires-body=1,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/baiduPan.js
 
 [MITM]
 hostname = %APPEND% www.instapaper.com, license.pdfexpert.com, api.revenuecat.com, createpdf.acrobat.com, api.faceapp.io, *api.smzdm.com
