@@ -6,6 +6,22 @@
 [Rule]
 URL-REGEX,^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner),REJECT-TINYGIF
 
+
+[URL Rewrite]
+
+#去除知乎链接跳转
+^https?://link.zhihu.com/\?target=(https?)%3A//(.*) url 307 $1://$2
+
+
+[Header Rewrite]
+
+# 知乎
+^https?+:\/\/www\.zhihu\.com\/question header-replace User-Agent "Mozilla/5.0 (Windows Phone 10)"
+
+# 百度盘
+^https:\/\/pan\.baidu\.com header-replace User-Agent "Mozilla/5.0 (Windows Phone 10)"
+
+
 [Script]
 
 # 签到获取cookie
@@ -35,5 +51,5 @@ SMZDM.js = type=http-response,pattern=^https?:\/\/(s|h(aojia|omepage)|(articl|ba
 百度盘网页优化显示.js = type=http-response,pattern=^https:\/\/pan\.baidu\.com,requires-body=1,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/baiduPan.js
 
 [MITM]
-hostname = %APPEND% www.instapaper.com, license.pdfexpert.com, api.revenuecat.com, createpdf.acrobat.com, api.faceapp.io, *api.smzdm.com
+hostname = %APPEND% www.instapaper.com, license.pdfexpert.com, api.revenuecat.com, createpdf.acrobat.com, api.faceapp.io, *api.smzdm.com, www.zhihu.com, pan.baidu.com
 
