@@ -5,7 +5,7 @@ socks-port: {{ default(global.clash.socks_port, "7891") }}
 allow-lan: {{ default(global.clash.allow_lan, "true") }}
 mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
-external-controller: :9090
+external-controller: 127.0.0.1:9090
 
 cfw-bypass:
   - localhost
