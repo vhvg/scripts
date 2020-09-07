@@ -47,6 +47,10 @@ cfw-bypass:
   - 172.30.*
   - 172.31.*
   - 192.168.*
+  - "msftconnecttest.com"
+  - "msftncsi.com"
+  - "*.msftconnecttest.com"
+  - "*.msftncsi.com"
   - <local>
 
 
