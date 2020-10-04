@@ -7,7 +7,7 @@
 URL-REGEX,^https?:\/\/(app-)?api\.smzdm\.com\/(v\d\/)?util\/(loading|banner),REJECT-TINYGIF
 
 # 普拉斯影业体验服-可直连观看(https://t.me/Plus_Movie_Best/214)
-DOMAIN,emby-best.xeton.dev,REJECT
+DOMAIN,emby-best.xeton.dev,DIRECT
 
 [URL Rewrite]
 
