@@ -104,6 +104,8 @@ bypass-system = true
 tls-provider = default
 # > 启动 Network.framework（默认不启用）
 network-framework = false
+# > 启用增强版WiFi助理
+wifi-assist = true
 # 其他（请先阅读手册，除非你明确知道其含义，否则不要修改任何设置）
 # > Show Reject Error Page
 show-error-page-for-reject = true
