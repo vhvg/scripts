@@ -35,7 +35,7 @@
 # rd: Reddit
 # ssp: 少数派
 # csdn: CSDN
-# yjs: 应届生
+# yjs: 应届生论坛
 
 # zdm: 什么值得买
 # amz: 亚马逊
@@ -123,8 +123,8 @@
 # csdn: CSDN
 ^https:\/\/duckduckgo.com\/\?q=csdn\+([^&]+).+ https://so.csdn.net/so/search/s.do?q=$1&t=&u= 302
 
-# 应届生  (Google 搜索 应届生网站)
-^https:\/\/duckduckgo.com\/\?q=yjs(\+|%20)([^&]+).+ https://www.google.com/search?as_q=$2&as_sitesearch=yingjiesheng.com 302
+# 应届生论坛  (Google 搜索 应届生论坛)
+^https:\/\/duckduckgo.com\/\?q=yjs(\+|%20)([^&]+).+ https://www.google.com/search?as_q=$2&as_sitesearch=bbs.yingjiesheng.com 302
 
 # > 购物
 # zdm: 什么值得买
