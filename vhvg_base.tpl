@@ -215,7 +215,7 @@ amplifi.lan = server:system
 
 [URL Rewrite]
 CUSTOM URL
-> Redirect Google Service
+#> Redirect Google Service
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
 [Header Rewrite]
