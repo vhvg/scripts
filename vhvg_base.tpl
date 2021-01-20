@@ -121,6 +121,8 @@ tun-included-routes = 192.168.1.12/32
 dns-server = 119.29.29.29,223.5.5.5,system
 # HTTP API
 http-api = examplekey@0.0.0.0:6166
+# GeoIP 地址
+geoip-maxmind-url = https://raw.githubusercontent.com/Hackl0us/GeoIP2-CN/release/Country.mmdb
 
 [Replica]
 # [抓取流量] => 过滤器
