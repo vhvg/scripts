@@ -8,6 +8,24 @@ mode: Rule
 log-level: {{ default(global.clash.log_level, "info") }}
 ipv6: true
 external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+    - 114.114.114.114
+    - 8.8.8.8
+  enhanced-mode: redir-host
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - https://1.1.1.1/dns-query
+    - https://dns.alidns.com/dns-query
+    - tls://1.0.0.1:853
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
 cfw-bypass:
   - localhost
   - 127.*
