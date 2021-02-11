@@ -16,15 +16,15 @@ dns:
     - 8.8.8.8
   enhanced-mode: redir-host
   fake-ip-filter:
-   - '*.lan'
-   - localhost.ptlogin2.qq.com
-   - '+.srv.nintendo.net'
-   - '+.stun.playstation.net'
-   - '+.msftconnecttest.com'
-   - '+.msftncsi.com'
-   - '+.xboxlive.com'
-   - 'msftconnecttest.com'
-   - 'xbox.*.microsoft.com'
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - '+.xboxlive.com'
+    - 'msftconnecttest.com'
+    - 'xbox.*.microsoft.com'
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
